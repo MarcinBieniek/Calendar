@@ -1,0 +1,36 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    min-height: 100vh;
+    display: flex;
+
+    .sidebar {
+        min-width: 250px;
+        display: flex;
+
+        .innerText {
+            margin: auto;
+        }
+    }
+
+    .content {
+        flex-grow: 1;
+        background-color: $color-grey;
+        display: flex;
+
+        .innerText {
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .container {
+        flex-direction: column-reverse;
+
+        .sidebar {
+            height: 150px;
+        }
+    }
+}
